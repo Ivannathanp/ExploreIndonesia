@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!-- Created By Ivan Nathan Parmenas_201869990239 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lombok - Explore Indonesia</title>
+    <link rel="shortcut icon" href="/img/Logo.png"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="/css/light-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/id/id-all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontent">
+      <div class="logo"><a href="Welcome.html"><img id="svg" src="/img/Logo.svg"></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Welcome.html">Home</a></li>
+        <li><a href="Explore.html">Go Explore</a></li>
+        <li><a href="Planning.html">Plan Your Trip</a></li>
+        <li><a href="Covid.php">COVID-19</a></li>
+        <li><a href="About.html">Contact Us</a></li>
+        <li>
+          <input type="checkbox" id="checkbox" class="checkbox"/>
+          <label id="theme-toggle" for="checkbox" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </label>
+        </li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="imagecontainer">    
+    <ul class="first-text hidden">
+      <li>W</li>
+      <li>E</li>
+      <li>L</li>
+      <li>C</li>
+      <li>O</li>
+      <li>M</li>
+      <li>E</li>
+    </ul>
+    <ul class="second-text hidden">
+      <li><h1>T</h1></li>
+      <li><h1>o</h1></li>
+      <li><h1> </h1></li>
+      <li><h1>L</h1></li>
+      <li><h1>o</h1></li>
+      <li><h1>m</h1></li>
+      <li><h1>b</h1></li>
+      <li><h1>o</h1></li>
+      <li><h1>k</h1></li>
+    </ul>
+    <div class="welcomebanner">
+      <div class="welcomeblurimg"></div>
+    </div>
+  </div>
+  
+  <div id="loader"></div>
+  <div class="outer">
+    <div class="wrap1">
+      <div class="wrapcontent">
+        <div class="panel-heading">The Island of Lombok</div>      
+        <div class="panel-body">          
+          <div class="imagecenter">    
+            <div class="intro">
+              <p> With divine beaches, the majestic Mt Rinjani and spectacular marine life to discover, the island of Lombok in West Nusa Tenggara has no shortage of attractions both in and out of the water. It’s no wonder that Lombok become one of the most popular destination in West Nusa Tenggara.
+              </p>
+            </div> 
+            <br><br><br><br><br>
+            <div class="back">
+              <i class="fas fa-long-arrow-alt-left"></i><a href="Explore.html">Return Back</a>
+            </div>         
+            
+            <div class="articles">
+              <div class="texts">
+                <h3>The Adventurous Trek</h3>
+                <hr class="solid">
+                <br><p>Challenge yourself with a trek up steep volcanic peaks. Hire a bike and cycle through lush evergreen rice paddies. Whichever way you choose to spend your time you won’t be disappointed with the spectacular natural beauty on offer here.
+                  Lombok Island is separated by the Lombok strait from Bali Island in the west and by Alas strait in the east from Sumbawa Island.
+                  <br><br>
+                  The Sasak people are the dominant ethnic group living in this island, which also consist of 5 regions: North Lombok, Central Lombok, East Lombok, West Lombok and Mataram city, the capital of West Nusa Tenggara.
+                  <br><br>
+                  North Lombok is where you can embark on the great hike to Mount Rinjani and linger until the sunset at Gili’s beautiful beaches.
+                  <br><br>
+                  Mount Rinjani is one of the highest volcano in Indonesia, with its summit rising to 3,726 meters above sea level. The Segara Anak Crater Lake located on top of the volcano, is one of the scenic view you should stop by and marvel at!
+                </p><br>
+              </div>
+              <div class="carousel-wrapper" style="margin-top: -5%;">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                  </ol>
+                  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Lombok/Adventure/1.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Mount Rinjani National Park Lombok</h2>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Lombok/Adventure/2.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>The aerial view of the 3 Gili Islands in Lombok</h2>
+                      </div>
+                    </div>                   
+                  </div>
+  
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>              
+            </div>
+          </div>       
+        </div>       
+      </div>
+    </div>   
+        
+    <div class="wrap2">
+      <div class="wrapcontent">
+        <div class="panel-body">          
+          <div class="imagecenter"> 
+            <div class="articles"> 
+              <br>
+              <div class="texts">
+                <h3>Explore the Waters</h3>
+                <hr class="solid">
+                <br><p>Among more than 20 gilis - local name that means ”small island” in Sasak language - three stood out to be the hot spot destination : Gili Trawangan, Gili Meno and Gili Air.
+                  <br><br>
+                  Gili Trawangan or Gili T, is where travelers flock to enjoy a laid back atmosphere during day light and still are up to enjoy moonlit parties all night by the beach. You can also enjoy a great scuba dive and circle the island on bicycle to catch the most incredible sunset!
+                  <br><br>
+                  Gili Meno is defined by long stretch of pearly white beaches that will give you a secluded feel. Famous for honeymooners destination, the island provide accommodation ranging from unique bungalows to luxurious resorts overlooking amazing panorama.
+                  <br><br>
+                  Gili Air is a cheerful mix of the two vibes, where you can still enjoy parties in hip hang outs or succumb at a peaceful nook and just enjoy the ocean breeze. Families love to travel to Gili Air to explore the island on the horse drawn cart or just swimming in the low tides before sun down.
+                  <br><br>
+                  Central Lombok is where the lovely beaches are situated. Kuta Beach, Tanjung A’an, and Mawun Beach are just a few on the list. Don’t miss out to brush up your wave riding skills in the splendid Selong Belanak Beach, or make way to Merese Hill and enjoy the view.
+                  </p><br>
+              </div>
+              <div class="carousel-wrapper" style="margin-top: -5%;">
+                <div id="carouselExampleControls2" class="carousel slide " data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
+                  </ol>
+                  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Lombok/Adventure/3.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Gili Meno Underwater Statues</h2>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Lombok/Adventure/6.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>The white pristine Senggigi Beach</h2>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>              
+            </div>          
+
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap1">
+      <div class="wrapcontent">
+        <div class="panel-body">          
+          <div class="imagecenter"> 
+            <div class="articles"> 
+              <br>
+              <div class="texts">
+                <h3>Blend in with the Locals</h3>
+                <hr class="solid">
+                <br><p>Here you can also visit the traditional villages and join the locals of Sasak tribe to experience their daily life in the weaving village of Sade and Rambitan. You may learn a thing or two from the wonderful women with meticulous weaving skills that produces fine quality textiles.
+                  <br><br>
+                  You can get across the sea to Sumbawa Island from the harbors in East Lombok. If you love exploring something new, you may find the black sand beach of Obel-Obel to be captivating!
+                  <br>
+                  In West Lombok, you can linger in Senggigi beach and discover the wild life at the Monkey Forest in Pusuk Village, right at the border between North and West Lombok. Just be careful with your belongings and keep them out of the monkey’s reach.
+                  <br><br>
+                  Mataram is the center for government and industry. It consist of the old town district of Ampenan, Cakranegara as the commercial district and Mataram city as office district.
+                  <br><br>
+                  Make time to visit the West Nusa Tenggara Museum, Mayura Garden and Narmada Park to find more stories about the island.
+                  <br><br>
+                  For the adventurous spirit, you can explore more of its south coast like the famous Tangsi ‘Pink’ Beach in further south east, with pretty corals making the shore looked blushed. Trek the path to find the amazing Senaru Waterfalls and Benang Kelambu Waterfalls for a soothing sight.
+                </p><br>
+              </div>
+              <div class="carousel-wrapper" style="margin-top: -5%;">
+                <div id="carouselExampleControls3" class="carousel slide " data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleControls3" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls3" data-slide-to="1"></li>
+                  </ol>
+                  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Lombok/Adventure/5.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>The Old Town of Ampenan</h2>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/Lombok/Adventure/4.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>The entrance to Sade village</h2>
+                      </div>
+                    </div>             
+                  </div>
+  
+                  <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>              
+            </div>          
+
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap2">
+      <div class="wrapcontent">
+        <div class="panel-body">          
+          <div class="imagecenter"> 
+            <div class="articles"> 
+              <br>
+              <div class="texts">
+                <h3>Top 5 Foods You Must Try in Lombok</h3>
+                <hr class="solid">
+              </div>
+              <div class="carousel-wrapper" style="margin-top: -5%;">
+                <div id="carouselExampleControls5" class="carousel slide " data-ride="carousel" data-interval="false">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleControls5" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls5" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls5" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleControls5" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleControls5" data-slide-to="4"></li>
+                  </ol>
+                  
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Lombok/Food/1.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Plecing Kangkung</h2>
+                        <p>Blue Water Safari Express is one of the fast boat companies that will take you from Bali to mainland Lombok. There are 2 convenient departure points from Bali: Serangan (just near the Benoa Harbour) and Padang Bai Harbour. You can also check on Gilibookings.com for more options and information around transport or accommodation in this scenic island.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/Lombok/Food/2.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Ayam Taliwang</h2>
+                        <p>Ayam Taliwang is typical Indonesian grilled chicken. Yet, what makes it unlike other Indonesian grilled chicken is the main ingredient, or “ayam kampung”, meaning chicken from the village – it usually tends to be smaller, juicier and more organic than the rest. The fowl is covered in “taliwang” sauce, made of shrimp paste, garlic, lime juice, chilies, salt, and candlenuts. Gobble it up while it’s still hot.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/Lombok/Food/3.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Sate Bulayak</h2>
+                        <p>What sets this beef satay apart from other skewered dishes is its companion, often called Bulayak. It’s a type of compressed rice cake, wrapped in palm leaves has an elongated shape. This special dish is served with a spicy, coconut milk sauce. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/Lombok/Food/4.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Ikan Bakar Pantai Nipah</h2>
+                        <p>One of the greatest ways to enjoy an exotic Lombok beach is by having a bite of Ikan Bakar Pantai Nipah, which is a special grilled fish found on Nipah Beach. The fish is marinated in varied seasonings, such as lime juice, garlic, chilies, ginger, and sweet soy sauce, then grilled over hot coals. Other variations include squid and shrimp and you shouldn’t miss out on any of these fine meals.
+                          </p>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/img/Lombok/Food/5.jpg" width="100%" height="100%">
+                      <div class="caption">
+                        <h2>Nasi Balap Puyung</h2>
+                        <p>
+                          Nasi Puyung is basically steamed rice – it’s usually accompanied by several traditional dishes, such as Ayam Suwir (shredded chicken, cooked with lemongrass, chilies, and shrimp paste), Kering Kentang (crispy fried potato slices), Tumis Kacang (sauteed string beans), and sambal (spicy hot sauce). Add some fried soy beans for the garnish and you have the perfect meal.
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>              
+            </div>      
+          </div>
+        </div>     
+      </div>
+    </div>
+
+    <div class="wrap1">
+      <div class="wrapcontent">
+        <div class="panel-body">          
+          <div class="imagecenter"> 
+            <div class="articles"> 
+              <br>
+              <div class="texts">
+                <h3>Get Around</h3>
+                <hr class="solid">
+                <br><p>In mainland Lombok, you can get around by renting motorcycle or cars from trusted providers. Public transportations are a natural-air conditioned minibus called Bemo. It will take you to most tourist attractions, but only operates during daytime. When night fell, there will be Ojek, a motorcycle transport with no meter that allows you to practice your bargain skills before you hop on. And the most unique will be the Cidomo, found in Senggigi beach or the Gilis. It’s a nickname for Cikar-Dokar-Motor, a cart with literal horse power enough to carry around 4 people.
+                </p><br>
+                <div class="text">
+                  <h3>Get To Lombok</h3>
+                  <hr class="solid">
+                  <br>
+                  <p><span>By Ferry</span></p>
+                  <br><p>The public ferry travels between Padangbai (Bali) and Lembar (Lombok) multiple times a day. The trip takes around 4-5 hours. Motorbikes and cars can be taken on the ferry. If you are prone to sea-sickness be warned that the trip can be rough.  Ferries travel between Labuhan Lombok and Poto Tano on Sumbawa multiple times a day. The trip takes one and a half hours.
+                    </p><br>
+                  <p><span>By Land</span></p>
+                  <br><p>TPublic transport to Bali is available through travel companies and busses. If you opt to experience a road trip, be sure that you are equipped and ready for the long hours.
+                  <br><br>
+                    From the capital of Jakarta, an overland road trip to Bali can range from 30 hours to a few days. All depending on whether or not you want to stop by and enjoy the cities that you are going to pass through.
+                  </p><br>
+                  <p><span>By Fast Boat</span></p>
+                  <br><p>Blue Water Safari Express is one of the fast boat companies that will take you from Bali to mainland Lombok. There are 2 convenient departure points from Bali: Serangan (just near the Benoa Harbour) and Padang Bai Harbour. You can also check on Gilibookings.com for more options and information around transport or accommodation in this scenic island.
+                  </p><br>
+              </div>
+            </div>          
+          </div>
+        </div>  
+        <div class="up" onclick='window.scrollTo({top: 0, behavior: "smooth"});'style="margin-top:1%;margin-right:5%">
+          <i class="fas fa-arrow-up"></i>Back to Top
+        </div> 
+        <br><br><br>   
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="leftcolumn">
+            <span class="copyright">© Experience Indonesia 2021</span>
+          </div>
+          <div class="centercolumn">
+            <ul class="quicklinks">
+              <li><a href="https://www.privacypolicygenerator.info/live.php?token=EhrJnCOtEcO8ZKAe6iHg7I94pRyz0MzT">Privacy Policy</a>
+              </li>
+              <li><a href="https://www.termsandconditionsgenerator.com/live.php?token=nuqgWid5a82v45ZRv8T2QTOp0BqROTLu">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="rightcolumn">
+            <ul class="social-buttons">
+              <li><a href="https://twitter.com/indtravel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/indtravel/?hl=en"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>                
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
+
+

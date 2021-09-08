@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- Created By Ivan Nathan Parmenas_201869990239 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Indonesia</title>
+  <link rel="shortcut icon" href="/img/Logo.png"/>
+  <link id="theme" rel="stylesheet" type="text/css" href="/css/light-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/id/id-all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontent">
+      <div class="logo"><a href="Welcome.html"><img id="svg" src="/img/Logo.svg"></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Welcome.html">Home</a></li>
+        <li><a href="Explore.html">Go Explore</a></li>
+        <li><a href="Planning.html">Plan Your Trip</a></li>
+        <li><a href="Covid.php">COVID-19</a></li>
+        <li><a href="About.html">Contact Us</a></li>
+        <li>
+          <input type="checkbox" id="checkbox" class="checkbox"/>
+          <label id="theme-toggle" for="checkbox" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </label>
+        </li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="imagecontainer">    
+    <ul class="first-text hidden">
+      <li>E</li>
+      <li>X</li>
+      <li>P</li>
+      <li>L</li>
+      <li>O</li>
+      <li>R</li>
+      <li>E</li>
+    </ul>    
+   
+    <div class="explorebanner">
+      <div class="exploreblurimg"></div>
+    </div>
+  </div>
+  
+  <div id="loader"></div>
+  <div class="wrap1">
+    <div class="wrapcontentvid">
+      <div class="panel-heading">The Ultimate Virtual Holiday</div>     
+      <div class="panel-body">
+        <div class="imagecenter">
+          <div class="intro">
+            <br>
+            <p>Finding the perfect destination has never been this easy. 
+              Roam the boundless beauty of Indonesia without having to step outside and take a sneak peek before planning your dream holiday!
+            </p>
+          </div>
+          <div class="carousel-wrapper">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" data-interval="false">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="5"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="6"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="7"></li>
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-0" class="embed-responsive-item" src="https://www.youtube.com/embed/HDJqxj2Ka_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>  
+                  <h2>Immerse youself into a 360 tour of Bali's scenic spots</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-1" class="embed-responsive-item" src="https://www.youtube.com/embed/KpZ-hXUoufE?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Take a stroll around Jakarta in 360 view</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-2" class="embed-responsive-item" src="https://www.youtube.com/embed/uRwfguPN5Pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Discover Labuan Bajo in a 360 aeriel view</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-3" class="embed-responsive-item" src="https://www.youtube.com/embed/JF-f_ZCU2y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Discover the natural wonders of Lake Toba</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-4" class="embed-responsive-item" src="https://www.youtube.com/embed/mceTkrsr4NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Dive deeper into the magnificence of Gili Trawangan, Lombok</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-5" class="embed-responsive-item" src="https://www.youtube.com/embed/w7uaPX-YL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Discover the otherworldly 1,500 islets that surround Raja Ampat</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-6" class="embed-responsive-item" src="https://www.youtube.com/embed/BnyFVFAgdKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Gaze into the stunning beauty of Mt.Bromo</h2>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="carousel-video-inner embed-responsive embed-responsive-16by9">
+                    <iframe id="vid-7" class="embed-responsive-item" src="https://www.youtube.com/embed/HLq-p1JJPvc?start=35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <h2>Explore the heart of Central Java in 360</h2>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+                <span class="sr-only">Next</span>
+              </a>              
+            </div> 
+          </div>
+        </div>       
+      </div>       
+     </div>
+   </div>   
+
+   <div class="wrap2">
+    <div class="wrapcontent2">
+      <div class="panel-heading">Your Journey Starts Here</div>  
+      <div class="panel-body"> 
+        <div class="imagecenter">
+          <div class="cardcontainer">
+
+            <div class="cards">
+              <a href="Bali.html">
+                <div class="bg1"></div> 
+                <div class="cardtext">Bali</div>  
+              </a>  
+            </div>   
+              
+            <div class="cards">  
+              <a href="Bandung.html">       
+                <div class="bg2"></div>                            
+                <div class="cardtext">Bandung</div>
+              </a>
+            </div>
+
+            <div class="cards">
+              <a href="Jakarta.html">   
+                <div class="bg3"></div>
+                <div class="cardtext">Jakarta</div>
+              </a>
+            </div>
+
+            <div class="cards">                             
+              <a href="Labuanbajo.html">  
+                <div class="bg4"></div>
+                <div class="cardtext">Labuan Bajo</div>                    
+              </a>
+            </div>
+
+            <div class="cards">
+              <a href="Laketoba.html">
+                <div class="bg5"></div>
+                <div class="cardtext">Lake Toba</div>
+              </a>              
+            </div>
+
+            <div class="cards">
+              <a href="Lombok.html">
+              <div class="bg6"></div>
+              <div class="cardtext">Lombok</div>                  
+              </a>
+            </div>
+
+            <div class="cards">
+              <a href="Rajaampat.html">
+                <div class="bg7"></div>
+                <div class="cardtext">Raja Ampat</div>
+              </a>              
+            </div>
+
+            <div class="cards">
+              <a href="Semarang.html">
+                <div class="bg8"></div>
+                <div class="cardtext">Semarang</div>
+              </a>             
+            </div>
+
+            <div class="cards">
+              <a href="Solo.html">
+                <div class="bg9"></div>
+                <div class="cardtext">Solo</div>
+              </a>              
+            </div>
+
+            <div class="cards">
+              <a href="Jogja.html">
+                <div class="bg10"></div>
+                <div class="cardtext">Jogja</div>
+              </a>              
+            </div>
+
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="leftcolumn">
+          <span class="copyright">© Experience Indonesia 2021</span>
+        </div>
+        <div class="centercolumn">
+          <ul class="quicklinks">
+            <li><a href="https://www.privacypolicygenerator.info/live.php?token=EhrJnCOtEcO8ZKAe6iHg7I94pRyz0MzT">Privacy Policy</a>
+            </li>
+            <li><a href="https://www.termsandconditionsgenerator.com/live.php?token=nuqgWid5a82v45ZRv8T2QTOp0BqROTLu">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+        <div class="rightcolumn">
+          <ul class="social-buttons">
+            <li><a href="https://twitter.com/indtravel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/indtravel/?hl=en"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>                
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>

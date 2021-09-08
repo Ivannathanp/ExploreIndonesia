@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Created By Ivan Nathan Parmenas_201869990239 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="/img/Logo.png"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="/css/light-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/id/id-all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navcontent">
+      <div class="logo"><a href="Welcome.html"><img id="svg" src="/img/Logo.svg"></a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="Welcome.html">Home</a></li>
+        <li><a href="Explore.html">Go Explore</a></li>
+        <li><a href="Planning.html">Plan Your Trip</a></li>
+        <li><a href="Covid.php">COVID-19</a></li>
+        <li><a href="About.html">Contact Us</a></li>
+        <li>
+          <input type="checkbox" id="checkbox" class="checkbox"/>
+          <label id="theme-toggle" for="checkbox" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </label>
+        </li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="imagecontainer">    
+    <ul class="first-text hidden">
+      <li>C</li>
+      <li>O</li>
+      <li>N</li>
+      <li>T</li>
+      <li>A</li>
+      <li>C</li>
+      <li>T</li>
+    </ul>
+    <div class="welcomebanner">
+      <div class="welcomeblurimg"></div>
+    </div>
+  </div>
+  
+  <div id="loader"></div>
+  <div class="outer">
+    <div class="wrap1">
+      <div class="wrapcontent">
+        <div class="panel-heading">Thank You For Visiting Explore Indonesia!</div>      
+        <div class="panel-body">          
+          <div class="imagecenter">
+            <p>If you have any questions regarding Indonesia's tourism or contents in this website, feel free to contact us by filling in the form below.</p>
+            <br><br>    
+            <div class="form">                         
+              <form action="https://formsubmit.co/ivanparmenas@gmail.com" method="POST">
+                <h4>Full Name*</h4>
+                <input type="text" name="name" required>
+                <h4>Email*</h4>
+                <input type="email" name="email" required>
+                <h4>Message*</h4>
+                <input type="text" name="text" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Someone Contact through your website!">
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="leftcolumn">
+            <span class="copyright">© Experience Indonesia 2021</span>
+          </div>
+          <div class="centercolumn">
+            <ul class="quicklinks">
+              <li><a href="https://www.privacypolicygenerator.info/live.php?token=EhrJnCOtEcO8ZKAe6iHg7I94pRyz0MzT">Privacy Policy</a>
+              </li>
+              <li><a href="https://www.termsandconditionsgenerator.com/live.php?token=nuqgWid5a82v45ZRv8T2QTOp0BqROTLu">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+          <div class="rightcolumn">
+            <ul class="social-buttons">
+              <li><a href="https://twitter.com/indtravel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="https://www.instagram.com/indtravel/?hl=en"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>                
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
+
